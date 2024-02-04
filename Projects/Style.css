@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: wheat;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    margin: 0 25px; 
+    padding: 9px;
+}
+.header_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_nav-logo{
+    width: 150px;
+    padding-top: 25px;
+    padding-left: 25px;
+}
+.header_nav-items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    align-items: center;
+    padding-right: 30px;
+}
+.header_nav-item a{
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.header_nav-item a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+.hero{
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.main_text{
+    width: 700px;
+}
+.main_img img{
+    width: 100%;
+    height: 20%;
+    border: 10px solid lightslategray;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: lightcyan;
+}
+.main_text-heading{
+    font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
+    color: #818181;
+    font-size: 35px;
+    border: 8px solid lightcoral;
+    padding: 28px;
+    border-radius: 8px;
+    background-color: lightgoldenrodyellow;
+}
+.showcase{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}
+.showcase_cards a{
+    font-size: 26px;
+    text-align: center;
+    text-decoration: none;
+    color: blueviolet;
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: bold;
+    /* margin-left: 5px; */
+    /* padding-bottom: 5px; */
+}
+.showcase_cards a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+.footer{
+    background-color: black;
+    border-radius: 5px ;
+
+}
+.footer_text{
+    color: whitesmoke;
+    text-align: center;
+    padding: 8px;
+    font-style:italic;
+    font-size: 25px;
+    font-weight: bold;
+}
+.hero1{
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.hero2{
+    display: flex;
+    padding-top: 45px;
+    padding-bottom: 25px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
