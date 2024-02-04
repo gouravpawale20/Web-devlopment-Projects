@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+
+}
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.mountaing, .standing{
+    position: absolute;
+    border-top-color: 3px solid black;
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+     z-index: -1;
+    
+}
+.mountaing{
+       transform: translateZ(-40px) scale(5);
+
+}
+.standing{
+    transform: translateZ(-20px) scale(3);
+    
+}
+.heading{
+    position: absolute;
+    color: whitesmoke;
+    font-style: oblique;
+    font-size: 9rem;
+    letter-spacing: 4px;
+    top: 5rem;
+    text-shadow: 0 0 10px rgba(0,0,0.0.3);
+}
+section{
+    background-color: rgb(45, 45, 45);
+    color: #818181; 
+    padding: 5rem 0;
+}
+.bg{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    height: 450px;
+    background-position: center;
+    background-size: cover ;
+}
+.bg1{
+    background-image: url(./Images/Cycling.jpg);
+}
+.bg2{
+    background-image: url(./Images/paragliding.jpg);
+}
+.bg3{
+    background-image: url(./Images/surfing.jpg);
+}
+.secHeading{
+    font-size: 5rem;
+    padding: 0 10rem ;
+}
+.Text{
+    font-size: 1.35rem;
+    color: #878947;
+    padding: 2.5rem 8rem;
+    margin: 0.2rem 0.566rem;
+}
+.desc{
+    position: absolute;
+    font-size: 3.7rem;
+    background-color: whitesmoke;
+    color: black;
+    top: 50%;
+    left: 50%;
+    padding: 0.5rem 2.5rem ;
+    transform: translateX(-50%) translateX(-5%);
+    font-weight: 650;
+}
