@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="calculator.css">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+        integrity="sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+
+
+</head>
+
+<body>
+
+    <!-- <h1 class="h1"> CALCULATOR </h1> -->
+    <div class="container">
+        <div id="screen">
+            <input id="display" type="text" placeholder="Enter Your Digits" readonly>
+        </div>
+        <div class="btns">
+            <div class="scrollmenu">
+                <input type="button" class="bt" value="Rem" onclick="reminder()">
+                <input type="button" class="bt" value="Sum-N" onclick="sumOfNaturalNumbers()">
+                <input type="button" class="bt" value="Sum-D" onclick="sumOfNumbers()">
+                <input type="button" class="bt" value="PN" onclick="primeno()">
+                <input type="button" class="bt" value="Rev" onclick="reverse()">
+                <input type="button" class="bt" value="Big-D" onclick="LargestDigit()">
+                <input type="button" class="bt" value="leap" onclick="leapyear()">
+                <input type="button" class="bt" value="Dig" onclick="count()">
+                <input type="button" class="bt" value="E/O" onclick="evenOdd()">
+                <input type="button" class="bt" value="X&#178;" onclick="square()">
+                <input type="button" class="bt" value="X&#179;" onclick="cube()">
+                <input type="button" class="bt" value="√" onclick="squareroot()">
+                <input type="button" class="bt" value="&#8731;" onclick="cuberoot()">
+                <input type="button" class="bt" value="Arm" onclick="arms()">
+            </div>
+
+            <div class="row" id="r">
+                <input type="button" class="btn" value="x!" onclick="factorial()">
+                <input type="button" class="btn" value="log" onclick="log()">
+                <input type="button" class="btn" value="π" onclick="pi()">
+                <input type="button" id="ac" class="btn" value="AC" onclick="clearA()">
+                <input type="button" id="ce" value="⌫" onclick="backspace()">
+                <input type="button" class="operator" value="%" onclick="percent()">
+                <input type="button" class="operator" value="M*" onclick="multiplication()">
+            </div>
+
+            <div class="row">
+                <input type="button" class="btn" value="(" onclick="appendvalue('(') ">
+                <input type="button" class="btn" value=")" onclick=" appendvalue(')')">
+                <input type="button" class="btn" value="In" onclick="ln()">
+                <input type="button" class="num" value="7" onclick="appendvalue('7')">
+                <input type="button" class="num" value="8" onclick="appendvalue('8')">
+                <input type="button" class="num" value="9" onclick="appendvalue('9')">
+                <input type="button" class="operator" value="/" onclick="appendvalue('/')">
+            </div>
+
+            <div class="row">
+                <input type="button" class="tri" value="sin()" onclick="sin()">
+                <input type="button" class="btn" value="X^" onclick="exponent()">
+                <input type="button" class="btn" value="Rad" onclick="radians()">
+                <input type="button" class="num" value="4" onclick="appendvalue('4')">
+                <input type="button" class="num" value="5" onclick="appendvalue('5')">
+                <input type="button" class="num" value="6" onclick="appendvalue('6')">
+                <input type="button" class="operator" value="*" onclick="appendvalue('*')">
+            </div>
+
+            <div class="row">
+                <input type="button" class="tri" value="cos()" onclick="cos()">
+                <input type="button" class="btn" value="+/-" onclick="plusMinus()">
+                <input type="button" class="btn" value="∘" onclick="degrees()">
+                    <input type="button" class="num" value="1" onclick="appendvalue('1')">
+                    <input type="button" class="num" value="2" onclick="appendvalue('2')">
+                    <input type="button" class="num" value="3" onclick="appendvalue('3')">
+                    <input type="button" class="operator" value="-" onclick="appendvalue('-')">
+                </div>
+                
+                <div class="row">
+                    <input type="button" class="tri" value="tan()" onclick="tan()">
+                    <input type="button" class="btn" value="e" onclick="exp()">
+                    <input type="button" class="btn" value="," onclick="appendvalue(',')">
+                <input type="button" class="num" value="0" onclick="appendvalue('0')">
+                <input type="button" class="decimal" value="." onclick="appendvalue('.')">
+                <input type="button" id="eval" value="=" onclick="result()">
+                <input type="button" class="operator" value="+" onclick="appendvalue('+')">
+
+            </div>
+        </div>
+    </div>
+
+    <h2>soft <span>SCIENTIFIC</span><br>CALCI <br> <i style="font-size: 100px;" class="fa fa-reply"></i></h2>
+
+
+    <script src="calculator.js"></script>
+</body>
+
+</html>
